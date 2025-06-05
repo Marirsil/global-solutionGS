@@ -1,0 +1,163 @@
+@import url(header.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 { font: var(--h1); line-height: 58px; }
+h2 { font: var(--h2); line-height: 50px; }
+h3 { font: var(--h3); }
+h4 { font: var(--h4); letter-spacing: 0.5px; }
+h5 { font: var(--h5); }
+p,ul {font: var(--paragrafo1);}
+
+body{
+  background-color: var(--backgroundColor);
+}
+
+:root {
+  --backgroundColor: #131C21;
+  --sectionColor: #10191E;
+  --textColor40: #6D7376;;
+  --textColor70: #A9A9A9;
+  --detalhes: #2B3439;
+  --txtPaginaInicial: #2b3439b3;
+  --white: #FFFFFF;
+
+  --buttonaparte: #2B3439;
+  --txtbuttonaparte: #D9D9D9;
+
+  --darkBlue: #131C21;
+  --progressBgColor: #ccc;
+  --progressBarColor: #4caf50;
+
+  --btnHoverBg: #3a4258;
+  
+  --correctBg: #9aeabc;
+  --incorrectBg: #ff9393;
+  
+  --libre-baskerville: 'Libre Baskerville', sans-serif;
+  --league-spartan: "League Spartan", sans-serif;
+
+  --h1: 400 54px var(--league-spartan);
+  --h2: 400 40px var(--league-spartan);
+  --h3: 200 34px var(--league-spartan);
+  --h4: 400 17px var(--league-spartan);
+  --h5: 200 14px var(--league-spartan);
+  --paragrafo1: 400 14px/30px var(--libre-baskerville);
+  --paragrafo1Bold: 700 14px/30px var(--libre-baskerville);
+  --paragrafoContainer: 400 12px/20px var(--libre-baskerville);
+  --button: 300 20px var(--league-spartan);
+  --placeholder: 400 12px var(--libre-baskerville);
+  --btnEnviar: 600 24px/30px var(--league-spartan);
+  --header : 300 17px var(--league-spartan);
+  --divText: 300 15px var(--league-spartan);
+  --quizQuestion: 300 30px var(--league-spartan);
+  --label: 400 13px var(--league-spartan);
+}
+
+
+[data-theme="light"]{
+  --backgroundColor: #F3F7F9; 
+  --sectionColor: #E9EEF2; 
+  --textColor40: #7F7F7F; 
+  --textColor70: #F3F7F9;
+  --detalhes: #D3DBE0; 
+  --txtPaginaInicial: rgba(211, 219, 224, 0.7); 
+  --white: #131C21; 
+
+  --buttonaparte:#131C21;
+  --txtbuttonaparte:#D9D9D9;
+
+  --darkBlue: #F3F7F9; 
+  --quizTitleColor: #F3F7F9;
+  --progressBgColor: #ccc;
+  --progressBarColor: #4caf50;
+  --btnHoverBg: #3a4258;
+  --correctBg: #9aeabc;
+  --incorrectBg: #ff9393;
+} 
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 26px;
+  height: 1.5px;
+  background: var(--white);
+  margin: 8px;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+@media (max-width: 880px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 15rem;
+    height: 92vh;
+    background: var(--sectionColor);
+    flex-direction: column;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 10;
+  }
+
+  .nav-list li {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    top: 0.95rem;
+    right: 1.5rem;
+  }
+
+  .mode-button {
+    position: absolute;
+    top: 1.3rem;
+    right: 4.5rem;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
