@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3.625rem;
+  align-items: center;
+  background-color: var(--sectionColor);
+  height: 4.3125rem;
+  ul {
+    font: var(--header);
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .iconMode {
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+  .logo{
+    width: 6rem;
+    height: 2.3rem;
+  }
+}
+
+li, a {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  color: var(--white);
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+}
