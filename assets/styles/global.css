@@ -37,8 +37,7 @@ body{
   
   --correctBg: #9aeabc;
   --incorrectBg: #ff9393;
-  
-  --libre-baskerville: 'Libre Baskerville', sans-serif;
+
   --league-spartan: "League Spartan", sans-serif;
 
   --h1: 400 54px var(--league-spartan);
@@ -46,16 +45,16 @@ body{
   --h3: 200 34px var(--league-spartan);
   --h4: 400 17px var(--league-spartan);
   --h5: 200 14px var(--league-spartan);
-  --paragrafo1: 400 14px/30px var(--libre-baskerville);
-  --paragrafo1Bold: 700 14px/30px var(--libre-baskerville);
-  --paragrafoContainer: 400 12px/20px var(--libre-baskerville);
+  --paragrafo1: 300 18px/30px var(--league-spartan);
+  --paragrafoContainer: 300 15px/20px var(--league-spartan);
   --button: 300 20px var(--league-spartan);
-  --placeholder: 400 12px var(--libre-baskerville);
+  --placeholder: 400 12px var(--league-spartan);
   --btnEnviar: 600 24px/30px var(--league-spartan);
   --header : 300 17px var(--league-spartan);
   --divText: 300 15px var(--league-spartan);
   --quizQuestion: 300 30px var(--league-spartan);
   --label: 400 13px var(--league-spartan);
+  --footerTxt: 200 15px/30px var(--league-spartan);
 }
 
 

@@ -93,5 +93,5 @@ function atualizarConteudo(tipo) {
   img1.src = src1;
   img2.src = src2;
   img3.src = src3;
-  img4.src = src4;
+  img4.src = src4;
 }

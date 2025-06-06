@@ -8,6 +8,9 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  p{
+    font: var(--footerTxt);
+  }
 }
 
 .linha{
@@ -48,6 +51,7 @@ footer{
   align-items: center;
   justify-content: center;
   height: 540px;
+  margin-top: 8rem;
 }
 
 .containerProblemas{
@@ -61,13 +65,7 @@ footer{
   }
   h4{
     width: 230px;
-  }
-  p{
-    font: var(--paragrafoContainer);
-    width: 230px;
-  }
-  p:first-of-type{
-    margin-top: 5px;
+    
   }
 }
 
@@ -83,6 +81,7 @@ footer{
   text-align: center;
 
   img{
+    margin-top: 5px;
     height: 24px;
     width: 24px;
   }
@@ -93,7 +92,7 @@ footer{
     width: 200px;
   }
   h4{
-    margin-block: 23px 30px;
+    margin-block: 30px 15px;
   }
 }
 
@@ -114,12 +113,12 @@ footer{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 150px;
+  gap: 95px;
   margin-block: 65px 80px;
 }
 
 .alerta{
-  width: 300px;
+  width: 305px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,7 +142,7 @@ footer{
   background-color: white;
   transition: margin-left 0.3s ease; 
   /* border: 1px solid red; */
-  left: 8.5%;
+  left: 17.5%;
 }
 
 #oqueFazer{
@@ -232,6 +231,7 @@ footer{
       display: flex;
       align-items: center;
       justify-content: center;
+      font: var(--button);
     }
   }
 }
@@ -462,6 +462,7 @@ footer{
     height: 50px;
     width: 150px;
     border-radius: 40px;
+    font: var(--button);
   }
 
   .linha{
@@ -469,7 +470,7 @@ footer{
   }
 }
 
-.testosFooter{
+.textosFooter{
   height: 252px;
   display: flex;
   align-items: center;
@@ -477,7 +478,7 @@ footer{
 
   .linha{
     width: 40px;
-    margin-block: 6px 27px;
+    margin-block: 10px 20px;
   }
 }
 
