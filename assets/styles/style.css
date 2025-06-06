@@ -111,8 +111,8 @@ footer{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 5.9375rem;
-  margin-block: 4.0625rem 5rem;
+  gap: 4rem;
+  margin-block: 4.5rem 4.5rem;
 }
 
 .alerta{
@@ -126,20 +126,26 @@ footer{
   h5{margin-bottom: 0.9375rem}
 }
 
+.trilho{
+  width: 65.5rem;
+}
+
 .linhaDivisoria{
   position: relative;
   border-top: 0.1875rem solid var(--detalhes);
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .escolhaAlerta{
   position: absolute;
   top: -0.1875rem; 
   height: 0.1875rem;
-  width: 20.625rem;
+  width: 19rem;
   background-color: white;
   transition: margin-left 0.3s ease; 
-  left: 11.8%;
 }
 
 #oqueFazer{
@@ -162,7 +168,7 @@ footer{
 }
 
 .txtOqueFazer{
-  width: 28.4375rem;
+  width: 22.5rem;
   margin-left: 3.75rem;
   flex-direction: column;
   h2{
@@ -367,7 +373,7 @@ footer{
   border-radius: 1.25rem;
 
   form button{
-    width: 20.9375rem;
+    width: 22.2rem;
     height: 2.681875rem;
     background-color: var(--buttonaparte);
     border-radius: 1.875rem;
