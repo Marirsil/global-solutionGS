@@ -14,13 +14,13 @@ submitButton.addEventListener('click', (event) => {
   const cepValue = cepInput.value.trim();
   const emailValue = emailInput.value.trim();
 
-  if (nameValue === ""  idadeValue === ""  cepValue === ""  emailValue === "") {
+  if (nameValue === "" || idadeValue === "" || cepValue === "" || emailValue === "") {
     Message.textContent = 'Por favor, preencha todos os campos.';
     Message.classList.add('error');
     return;
   }
 
-  if (isNaN(idadeValue)  Number(idadeValue) <= 0) {
+  if (isNaN(idadeValue) || Number(idadeValue) <= 0) {
     Message.textContent = 'Idade inválida. Por favor, insira uma idade válida.';
     Message.classList.add('error');
     return;

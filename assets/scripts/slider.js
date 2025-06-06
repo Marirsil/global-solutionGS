@@ -31,6 +31,3 @@ dots.forEach((li, key) => {
     reloadSlider();
     })
 })
-window.onresize = function(event) {
-    reloadSlider();
-};
